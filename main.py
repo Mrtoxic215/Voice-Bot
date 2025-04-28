@@ -14,7 +14,7 @@ async def text_to_voice(update: Update, context: ContextTypes.DEFAULT_TYPE):
     os.remove("voice.mp3")
 
 def main():
-    app = ApplicationBuilder().token("7449224718:AAFwB-iCGJ2UohorxUXyURi06GNekOStX0g").build()
+    app = ApplicationBuilder().token("7449224718:AAHtwLOctFqi7PYsyiGZdMwmJi2s9in9eKI").build()
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), text_to_voice))
